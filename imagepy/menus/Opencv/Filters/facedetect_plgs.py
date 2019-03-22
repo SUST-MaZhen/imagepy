@@ -11,7 +11,7 @@ class Plugin(Filter):
 
 
     def run(self, ips, snap, img, para = None):
-        # 导入训练好的人脸分类文件
+        # 人脸检测
         # 获取当前工作路径
         path = os.getcwd()
         face_cascade = cv2.CascadeClassifier(path+ '\menus\Opencv\Filters\haarcascade_frontalface_default.xml')
