@@ -13,3 +13,5 @@ xlrd
 xlwt
 markdown
 moderngl
+opencv-python
+numpy

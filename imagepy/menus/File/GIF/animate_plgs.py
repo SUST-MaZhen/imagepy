@@ -1,7 +1,7 @@
 from imagepy.core.util import fileio
 from imagepy.core.engine import Simple
 from imagepy import IPy, root_dir
-import os, imageio
+import os, skimage.io
 import numpy as np
 
 class SaveAnimate(Simple):

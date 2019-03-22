@@ -1,0 +1,1 @@
+catlog = [ 'canny','Gray-Scale','Bin-Scale']

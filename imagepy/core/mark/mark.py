@@ -221,13 +221,15 @@ def draw_rectangle(pts, dc, f, **key):
 		x, y, w, h = pts['body']
 		x, y = f(x, y)
 		w, h = w*key['k'], h*key['k']
-		dc.DrawRectangle(x-w/2, y-h/2, w, h)
+		#dc.DrawRectangle(x-w/2, y-h/2, w, h)
+		dc.DrawRectangle(x, y, w, h)
 	if pts['type'] == 'rectangles':
 		lst = []
 		for x, y, w, h in pts['body']:
 			x, y = f(x, y)
 			w, h = w*key['k'], h*key['k']
-			lst.append((x-w/2, y-h/2, w, h))
+			#lst.append((x-w/2, y-h/2, w, h))
+			lst.append((x, y, w, h))
 		dc.DrawRectangleList(lst)
 
 	pen.SetWidth(width)

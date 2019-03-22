@@ -1,5 +1,5 @@
 from imagepy.core.util import fileio
-from imageio import imread, imsave
+from skimage.io import imread, imsave
 from imagepy.core.manager import ReaderManager, WriterManager
 
 ReaderManager.add('jpg', imread)
